@@ -1,4 +1,5 @@
 body {
+    /* Set the background to an image instead of a color. */
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
     padding: 20px;
@@ -37,33 +38,39 @@ img {
     margin-right: auto;
     margin-top:-25px;
 }
-  
+
+/* Styling for all horizontal line */
 hr {
     height: 2px;
     background-color: brown;
     border-color: brown;
 }
-  
+
+/* additional styling for the bottom horizontal line. Added styling to the styling that applies to all horizontal lines. */
 .bottom-line {
     margin-top: 25px;
 }
-  
+
+/* font styling for all headers 1 and 2 */
 h1, h2 {
     font-family: Impact, serif;
 }
   
+/* Styling for all paragraph elements in class='item' */
 .item p {
     display: inline-block;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px;
 }
-  
+ 
+/* Styling for the flavors of coffee and dessert items. This places the items on the left and allows 75% of the page to be names of each. */
 .flavor, .dessert {
     text-align: left;
     width: 75%;
 }
   
+/* puts the prices of the items to the right and allows 25% of the page to be taken up by the prices. */
 .price {
     text-align: right;
     width: 25%;
@@ -78,7 +85,8 @@ footer {
 .address {
     margin-bottom: 5px;
 }
-  
+ 
+/* following css is for the clickable link on the bottom. The color of the link changes per action taken. */
 a {
     color: black;
 }
@@ -86,11 +94,13 @@ a {
 a:visited {
     color: black;
 }
-  
+
+/* hovering over the link changes the color to brown. */
 a:hover {
     color: brown;
 }
-  
+
+/* if the link is clicked it also stay brown. */
 a:active {
     color: brown;
 }
