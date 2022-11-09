@@ -27,6 +27,7 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
   
+/* changes the styling for only the last fieldset element */
 fieldset:last-of-type {
     border-bottom: none;
 }
@@ -53,7 +54,8 @@ input, textarea {
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
-  
+ 
+/* changes styling to only the submit type input */
 input[type="submit"] {
     display: block;
     width: 60%;
@@ -65,6 +67,7 @@ input[type="submit"] {
     min-width: 300px;
 }
     
+/* Changes the styling to only the file type input */
 input[type="file"] {
     padding: 1px 2px;
 }
