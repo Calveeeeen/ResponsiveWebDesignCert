@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Survey Form Certification</title>
+  <link rel='stylesheet' href='styles.css'/>
+</head>
+
+<body>
+  <h1 id='title'>
+    freeCodeCamp Survey Form
+  </h1>
+  <p id='description'>
+    Thank you for taking the time to fill out this form
+  </p>
+
+  <hr>
+  
+  <form method='post' id='survey-form'>
+    <label for='name'>
+      Enter your name: <input type='text' name='name-label' id='name' placeholder='John Doe' class='inline' required>
+    </label>
+    
+    <label for='email-label'>
+      Enter your email: <input type='email' name='email-label' id='email' placeholder='JohnDoe@gmail.com' class='inline' required>
+    </label>
+    
+    <label for='number-label'>
+      How many hours do you work a week: <input type='number' id='number' name='number-label' min='1' max='110' placeholder='40' class='inline' required>
+    </label>
+      
+    <label for='dropdown'>
+      What kind of industry do you work for?        
+      <select id='dropdown' name='dropdown'>
+        <option value=''>Selections</option>
+        <option value='1'>Retail</option>
+        <option value='2'>Restaurant</option>
+        <option value='3'>Software</option>
+        <option value='4'>Finance</option>
+        <option value='5'>Real Estate</option>
+        <option value='6'>Customer Service</option>
+      </select>
+    </label>
+    
+    <label>Would you reccomend this career path for others? 
+        <input type='radio' name='yes-no' id='yes'value='yes' checked>Yes</input> 
+        <input type='radio' name='yes-no' id='no' value='no'>No</input>
+    </label>
+
+    <label for='states' name='states'>
+        Which state/states do you recommend to work in for your career? 
+    </label>
+   
+    <div>
+      <input type='checkbox' name='states' id='states'/> New York
+      <input type='checkbox' name='states' id='states'/> Illinois
+      <input type='checkbox' name='states' id='states'/> California
+      <input type='checkbox' name='states' id='states'/> Texas
+      <input type='checkbox' name='states' id='states'/> Massachusetts 
+      <input type='checkbox' name='states' id='states'/> Colorado
+      <input type='checkbox' name='states' id='states'/> Utah
+    </div>
+   
+    <label for='more-states'>
+        Any other state that you would recommend and why? 
+    </label>
+   
+    <div for='more-states'>
+        <textarea id='more-states' name='morestates' class='more-states' rows='5' cols='45' placeholder='i recommend _____ because_____'></textarea>
+    </div>
+
+    <input type='submit' id='submit' value='Submit'>
+
+
+  </form>
+</body>
