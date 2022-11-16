@@ -1,3 +1,4 @@
+/* Create the background for the painting */
 .canvas {
     width: 500px;
     height: 600px;
@@ -6,6 +7,7 @@
     filter: blur(2px);
 }
   
+/* Creates the big black border around the image. Supposed to be the frame of the painting */
 .frame {
     border: 50px solid black;
     width: 500px;
@@ -13,6 +15,7 @@
     margin: 20px auto;
 }
   
+/* Creates the first block in the yellow orange-ish color */
 .one {
     width: 425px;
     height: 150px;
@@ -23,6 +26,7 @@
     transform: rotate(-0.6deg);
 }
   
+/* Creates the second block that sits under the first in the redish-orange color */
 .two {
     width: 475px;
     height: 200px;
@@ -32,11 +36,13 @@
     border-radius: 8px 10px;
     transform: rotate(0.4deg);
 }
-  
+
+/* Creates a blur effect the decrease sharpness of the first two blocks */
 .one, .two {
     filter: blur(1px);
 }
-  
+ 
+/* Creates the third block on the bottom of the painting */
 .three {
     width: 91%;
     height: 28%;
