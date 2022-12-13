@@ -1,0 +1,42 @@
+*{
+    padding: 10px;
+}
+  
+header{
+    display: inline-block;
+    text-align: center;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+li{
+    padding: 5px 0 5px 0;
+}
+
+#image{
+    width:50%;
+    max-width: 100%;
+    display: block;
+    justify-content:center;
+    align-items: center;
+    padding: 0 auto;
+    margin: 10px auto;
+    height:auto;
+    max-height:500px;
+}
+  
+#image1{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px auto;
+    margin: auto;
+    max-height:200px;
+}
+  
+#MLKspeech{
+    text-align:center;
+    margin: 0 10px 0 10px;
+}
