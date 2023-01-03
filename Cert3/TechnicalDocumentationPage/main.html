@@ -13,8 +13,8 @@
 
 <body>
     <main id='main-doc'>
-        <section class='main-section'>
-            <header id='Introduction'>
+        <section class='main-section' id='Introduction'>
+            <header>
                 <h1>
                     Introduction
                 </h1>
@@ -41,19 +41,146 @@
                         with a database, provice continuity of information from one invocation to another of the
                         application, or perform file manipulations on a server.
                     </li>
+                </ul>
+            </header>
         </section>
 
-        <section class='main-section'>
-
+        <section class='main-section' id='WhatYouShouldKnow'>
+            <header>
+                <h1>
+                    What you should already know
+                </h1>
+                <p>
+                    This guide assumes you already have the following basic backgrounds:
+                </p>
+                <ul>
+                    <li>
+                        A general understanding of the internet and the World Wide Web (WWW).
+                    </li>
+                    <li>
+                        Good working knowledge of HyperText Markup Language (HTML).
+                    </li>
+                    <li>
+                        Some programming exerpiece. If you are new to programming, try one of the tutorials linked on
+                        the main page about JavaScript.
+                    </li>
+            </header>
         </section>
-        <section class='main-section'>
 
+        <section class='main-section' id='JavaScriptVsJava'>
+            <header>
+                <h1>
+                    JavaScript vs Java
+                </h1>
+                <p>
+                    JavaScript and Java are similar in some ways but also different in other ways. The JavaScript
+                    language resembles Java but does not have Java's static typing and strong type checking. JavaScript
+                    follows most Java expression syntax, naming conventions and basic control-flow constructs which was
+                    the reason why it was renamed from LiveScript to Javascript.
+                </p>
+                <p>
+                    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a
+                    runtime system based on a small number of data types representing numberic, Boolean, and string
+                    values. JavaScript has a prototype-based object model instead of the more common class-based object
+                    model. The prototype-based model provides dynamic inheritance; that si, what is inherited can vary
+                    for individual objects. JavaScript also supports functions without any special declarative
+                    requirements. Functions can be properties of objects, executing as loosely typed methods.
+                </p>
+                <p>
+                    JavaScript is a very free-form language compared to Java. You don't have to delcare all variables,
+                    classes, and methods. You don't have to be concerned with whether methods are public, private, or
+                    protected, and you don't have to implement interfaces. Variables, parameters, and funtion return
+                    types are not explicitly typed.
+            </header>
         </section>
-        <section class='main-section'>
 
+        <section class='main-section' id='HelloWorld'>
+            <header>
+                <h1>
+                    Hello World
+                </h1>
+                <p>
+                    To get started with coding JavaScript, open the Scratchpad and write your first "Hello World"
+                    JavaScript code:
+                </p>
+                <code>
+          function greetMe(yourName){ alert("Hello " + yourName);}
+          <br>
+          greetMe("world")
+        </code>
+                <p>
+                    Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+                </p>
+            </header>
         </section>
-        <section class='main-section'>
 
+        <section class='main-section' id='Variables'>
+            <header>
+                <h1>
+                    Variables
+                </h1>
+                <p>
+                    You use variables as symbolic names for values in your application. The names of variables, called
+                    identifiers, conform to certain rules.
+                </p>
+                <p>
+                    A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent
+                    characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the
+                    characters "A" throught "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                </p>
+                <p>
+                    You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the
+                    Unicode escape sequences as characters in identifiers. Some examples of valid names are:
+                    Number_of_Hits, temp999, and _name.
+            </header>
+        </section>
+
+        <section class='main-section' id="DeclaringVariables">
+            <header>
+                <h1>
+                    Declaring Variables
+                </h1>
+                <p>
+                    You can declare a variables in three ways:
+                </p>
+                <p>
+                    With the keyword <em>var</em>. For example.
+                </p>
+                <code>
+          var x = 42;
+        </code>
+                <p>
+                    This syntax can be used to declare both local and global variables.
+                </p>
+                <p>
+                    By simply assigning it a value. For example.
+                </p>
+                <code>
+          x = 42;
+        </code>
+                <p>
+                    This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use
+                    this variant.
+                </p>
+                <p>
+                    With the keyword <em>let</em>. For example
+                </p>
+                <code>
+          let y = 12;
+        </code>
+                <p>
+                    This syntax can be used to declare a block scope local variable. See Variable Scope below.
+                </p>
+            </header>
+        </section>
+
+        <section class='main-section' id='VariableScope'>
+            <header>
+                <h1>
+                    Variable Scope
+                </h1>
+                <p>
+            </header>
         </section>
     </main>
 </body>
