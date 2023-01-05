@@ -180,7 +180,90 @@
                     Variable Scope
                 </h1>
                 <p>
+                    When you declare a variable outside of any function, it is called a gloval variable, because it is
+                    avaiable to any other code in the current document. When you declare a variab;e within a function,
+                    it is called a local variable, because it is only available with the function.
+                </p>
+                <p>
+                    JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared
+                    within a block is local to the function (or global scope) that block resides within. For example the
+                    following code will log 5, because the scope of x is the function (or global context) within which x
+                    is declared, not the block, which in this cas is an if statement.
+                </p>
+                <code>
+          if (true) {var x = 5}; console.log(x) //5
+        </code>
+                <p>
+                    This behavior changes, when using the let declaration introduced in ECMAScript 2015.
+                </p>
+                <code>
+          if (true) {let y = 5}; console.log(y); //ReferenceError: y is not defined
+        </code>
             </header>
         </section>
+
+        <section class='main-section' id='GlobalVariables'>
+            <header>
+                <h1>
+                    Global Variables
+                </h1>
+                <p>
+                    Global Variables are in fact properties of the global object. In web pages the global object is
+                    window, so you can set and access global variables using the window.variable syntax.
+                </p>
+                <p>
+                    Consequently, you can access global variables declared in one window or frame from another window or
+                    frame by specifying the window or frame name. For example, if a variable called phoneNumber is
+                    declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+                </p>
+            </header>
+        </section>
+
+        <section class='main-section' id='Constants'>
+            <header>
+                <h1>
+                    Constants
+                </h1>
+                <p>
+                    You can create a read-only, named constant with the <em>const</em> keyword. The syntax of a constant
+                    identifier is the same as for a variable identifier: it must start with a letter, underscore or
+                    dollar sign and can contain alphabetic, numeric, or underscore characters.
+                </p>
+                <code>
+          const PI = 3.14159;
+        </code>
+                <p>
+                    A constant <strong>can't</strong> change value through assignment of be re-declared while the script
+                    is running. It has to be initailized to a value..
+                </p>
+                <p>
+                    The scope rulesfor constantsare the same as those for let block scope variables. If the const
+                    keyword is ommitted, the identifier is assumed to represent a variable.
+                </p>
+                <p>
+                    You cannot declare a constant with the same name as a function or variable in the same scope. For
+                    example:
+                </p>
+                <code>
+          //This will cause an error//
+          <br>
+          function f(){}; const f = 5; 
+          <br>
+          //This will cause an error//
+          <br>
+          function f(){const g = 5; var g //statements//}
+        </code>
+                <p>
+                    However, object attributes are not protected, so the following statement is executed without
+                    problems.
+                </p>
+                <code>
+          const my_Object = {"key" : "value"};
+          <br>
+          my_Object.key = "otherValue";
+        </code>
+            </header>
+        </section>
+
     </main>
 </body>
