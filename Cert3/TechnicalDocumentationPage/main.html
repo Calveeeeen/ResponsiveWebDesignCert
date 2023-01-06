@@ -191,13 +191,19 @@
                     is declared, not the block, which in this cas is an if statement.
                 </p>
                 <code>
-          if (true) {var x = 5}; console.log(x) //5
+          if (true) {var x = 5}; 
+          <br>
+          console.log(x) //5
         </code>
                 <p>
                     This behavior changes, when using the let declaration introduced in ECMAScript 2015.
                 </p>
                 <code>
-          if (true) {let y = 5}; console.log(y); //ReferenceError: y is not defined
+          if (true) {let y = 5;} 
+          <br>
+          console.log(y); 
+          <br>
+          //ReferenceError: y is not defined
         </code>
             </header>
         </section>
@@ -247,7 +253,9 @@
                 <code>
           //This will cause an error//
           <br>
-          function f(){}; const f = 5; 
+          function f(){;} 
+          <br>
+          const f = 5; 
           <br>
           //This will cause an error//
           <br>
@@ -258,12 +266,120 @@
                     problems.
                 </p>
                 <code>
-          const my_Object = {"key" : "value"};
+          const my_Object = {"key" : "value";}
           <br>
           my_Object.key = "otherValue";
         </code>
             </header>
         </section>
 
+        <section class='main-section' id='DataTypes'>
+            <header>
+                <h1>
+                    Data Types
+                </h1>
+                <p>
+                    The latest ECMAScript standard defines seven data types:
+                </p>
+                <ul>
+                    <li> Six data types that are primitives:
+                        <ul>
+                            <li> Boolean - true and false statements. </li>
+                            <li> null - A special keyword denoting a null value. Because JavaScript is case-sensitive,
+                                null is not the same as Null, NULL, or any other variant. </li>
+                            <li> Undefined - A top-level property whose value is undefined. </li>
+                            <li> Number - 42 or 3.14159. </li>
+                            <li> String - "Howdy" </li>
+                            <li> Symbol (new in ECMAScript 2015) - A data type whose instances are unique and immutable.
+                            </li>
+                        </ul>
+                    <li> and Object </li>
+                </ul>
+                <p>
+                    Although these data types are a relatively small amount, they enable you to perform useful functions
+                    with your applications. Objects and functions are the other fundamental elements in the language.
+                    You can think of objects as named containers for values, and functions as procedures that your
+                    application can perform.
+                </p>
+            </header>
+        </section>
+
+        <section class='main-section' id='ifElseStatement'>
+            <header>
+                <h1>
+                    If...Else Statement
+                </h1>
+                <p>
+                    Use the if statement to execute a statement if a logical condition is true. Use the optional else
+                    clause to execute a statement if the condition is false. An if statement looks as follows:
+                </p>
+                <code>
+          if (condition) {
+            <br>
+              statement_1;
+            <br>
+            }
+          <br>
+          else {
+            <br>
+            statement_2;
+            <br>
+            }
+        </code>
+                <p>
+                    condition can be any expression that evaluates to true or false. See Boolean for an explanation of
+                    what evaluates to true and false. If condition evaluates to true, statement_1 is executed;
+                    otherwise, statement_2 is executed. statement_1 and statement_2 can be any statements, including
+                    further nested if statements.
+                </p>
+                <p>
+                    You may also compound the statements using else if to have mulitple conditions tested in sequence,
+                    as follows:
+                </p>
+                <code>
+          if (condition_1){statement_1;}
+          <br>
+          else if (condition_2){statement_2;}
+          <br>
+          else if (condition_n){statement_n;}
+          <br>
+          else{statement_last;}
+        </code>
+                <p>
+                    In the case of multiple conditions only the first logical condition which evaluates to true will be
+                    executed. To execute multiple statements, group them within a block statement ({...}). In general,
+                    it's good practice to always use block statements, especially when nesting if statements:
+                </p>
+                <code>
+          if (condition_1){statement_1_runs_if_condition_1_is_true; statement_2_runs_if_condition_1_is_true;}
+          <br>
+          else {statement_3_runs_if_condition_1_is_false; statement_4_runs_if_condition_1_is_false;}
+        </code>
+                <p>
+                    It is advisable to not use simple assignments in a conditional expression, because the assignment
+                    can be confused with equality when glancing over the code. For example, do not use the following
+                    code:
+                </p>
+                <code>
+          if (x = y) {/* statement here */}
+        </code>
+                <p>
+                    If you need to use an assignment in a conditional expression, a common practice is to put additional
+                    parentheses around the assignment. For example:
+                </p>
+                <code>
+          if ((x = y)){/* statement here */}
+        </code>
+            </header>
+        </section>
+
+        <section class='main-section' id='whileStatement'>
+            <header>
+                <h1>
+                    While Statements
+                </h1>
+                <p>
+            </header>
+        </section>
     </main>
 </body>
