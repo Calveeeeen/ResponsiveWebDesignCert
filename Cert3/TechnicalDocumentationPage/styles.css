@@ -1,7 +1,12 @@
 *{
-
+    margin: auto 5px;
+    padding: 5px;
 }
-
+  
 li{
-  margin:5px;
+    margin:5px;
+}
+  
+code{
+    display: block;
 }
