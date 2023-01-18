@@ -50,3 +50,9 @@ main{
   position: relative;
   margin-left: 270px;  
 }
+
+@media(max-width: 1280px){
+    #navbar{
+      
+    }
+}
