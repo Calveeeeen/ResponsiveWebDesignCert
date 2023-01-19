@@ -56,3 +56,14 @@ main{
       
     }
 }
+
+.nav-link:hover{
+    background-color: lightgrey;
+    /* color: white; */
+}
+  
+header{
+    font-family: Traditional Arabic;
+    font-weight: bold;
+    font-size: 24px;
+}
