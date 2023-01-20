@@ -80,7 +80,7 @@ body {
     height: 10%;
     background: linear-gradient(
         var(--building-color1),
-        var(--window-color1);
+        var(--window-color1));
 }
   
 .bb2 {
@@ -306,7 +306,6 @@ body {
             #ccc 20%,
             #445 21%,
             #223 100%
-          );
-      }
+        );
     }
 }
