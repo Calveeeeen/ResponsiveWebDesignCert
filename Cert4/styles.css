@@ -1,10 +1,20 @@
 *{
-
+  
+}
+section{
+  padding-top: 40px;
+  margin-left: 20px;
+  /* background-color: green; */
 }
 header{
   display: flex;
+  position: fixed;
   flex-direction: row;
-  /* background-color: blue; */
+  margin: -10px;
+  padding: 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  width:100vw;
 }
 .logo{
   display: flex;
@@ -15,7 +25,7 @@ header{
 }
 
 nav{
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   width: 100vw;
   flex-direction: row;
@@ -26,5 +36,89 @@ nav{
 .nav-link{
   text-decoration: none;
   font-size: 24px;
+  font-family: traditional arabic;
   padding: auto;
 }
+
+#How_It_Works{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-size: 17px;
+  font-family: traditional arabic;
+}
+
+form{
+  /* background-color: blue; */
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#email{
+  justify-content: center;
+  height: 30px;
+  width: 300px;
+}
+#submitButton{
+  background-color: #FFC000;
+  font-weight: bold;
+  font-size: 15px;
+  width: 35%;
+  max-height: 30px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+iframe{
+  padding: 10px;
+}
+
+#How_It_Works{
+  margin: 20px;
+  /* background-color: orangered; */
+}
+#Pricing{
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+#pricing-container{
+  border: solid 1px black;
+}
+
+#pricing-heading{
+  border-bottom: solid 1px black;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  background-color: lightgrey;
+}
+#pricing-container{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+  padding-bottom: 10px;
+}
+.selectButton{
+  background-color:#FFC000;
+  width: 35%;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#Pricing{
+  /* background-color: blue; */
+  width: 70%;
+}
+/* #pricing-container> h2, p{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
