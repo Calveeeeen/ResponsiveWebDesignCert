@@ -1,11 +1,8 @@
 *{
   
 }
-section{
-  padding-top: 40px;
-  margin-left: 20px;
-  /* background-color: green; */
-}
+
+/* Nav-Bar CSS */
 header{
   display: flex;
   position: fixed;
@@ -40,10 +37,11 @@ nav{
   padding: auto;
 }
 
-#How_It_Works{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Start of the Body CSS */
+section{
+  padding-top: 40px;
+  margin-left: 20px;
+  /* background-color: green; */
 }
 
 p{
@@ -51,14 +49,31 @@ p{
   font-family: traditional arabic;
 }
 
+/* Form CSS */
+#form{
+  /* background-color: red;
+  display: grid;
+  grid-template-rows: repeat(3,1fr); 
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  padding-top: 30px
+}
+
 form{
   /* background-color: blue; */
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-content: center; */
   text-align: center;
 }
+form > input, button{
+  margin: auto;
+  padding: auto;
+}
+
 #email{
   justify-content: center;
   height: 30px;
@@ -68,44 +83,59 @@ form{
   background-color: #FFC000;
   font-weight: bold;
   font-size: 15px;
-  width: 35%;
+  width: 200px;
+  max-width: 35%;
   max-height: 30px;
+  margin-top: 10px;
   justify-content: center;
   text-align: center;
   border-radius: 5px;
 }
+
+/* How_It_Works CSS*/
+#How_It_Works{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
 iframe{
   padding: 10px;
 }
 
-#How_It_Works{
-  margin: 20px;
-  /* background-color: orangered; */
-}
+/* Pricing CSS */
 #Pricing{
-  display: grid;
+  display: flex;
+  flex-direction: columns;
   margin: auto;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
-}
-#pricing-container{
-  border: solid 1px black;
+  padding: auto;
+  justify-content: space-between;
+  width: 75%;
+  /* background-color: red; */
 }
 
-#pricing-heading{
-  border-bottom: solid 1px black;
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  background-color: lightgrey;
-}
 #pricing-container{
+  border: solid 1px black;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: auto;
   padding-bottom: 10px;
+  width: 300px;
 }
+
+#pricing-heading{
+  border-bottom: solid 1px black;
+  padding-top: 15px;
+  min-height: 45px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+
 .selectButton{
   background-color:#FFC000;
   width: 35%;
@@ -113,12 +143,12 @@ iframe{
   border-radius: 5px;
 }
 
-#Pricing{
-  /* background-color: blue; */
-  width: 70%;
-}
 /* #pricing-container> h2, p{
   text-align: center;
   justify-content: center;
   align-items: center;
 } */
+
+@media (max-width: 720px){
+
+}
