@@ -4,7 +4,9 @@
 <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='styles.css' />
+    <!-- Can't create link to icons because no access to icons stylesheet -->
+    <link rel='stylesheet' href='' />
     <title>Homepage</title>
 </head>
 
@@ -23,20 +25,29 @@
     </header>
 
     <section>
-        <form type='text' id='form' action='https://www.freecodecamp.com/email-submit'>
+        <form id='form' type='text' action='https://www.freecodecamp.com/email-submit'>
             <h1>
                 Handcrafted, home-made masterpieces
             </h1>
-            <input type='email' id='email' class='email' placeholder='Please enter your email' required></input>
-            <button type='submit' id='submitButton'>Submit</button>
+            <input type='email' name='email' id='email' class='email' placeholder='Enter your email' required></input>
+            <input type='submit' id='submit' value='GET STARTED'></input>
         </form>
+    </section>
+    <section>
         <div id='Feature'>
+            
             <div class='grid'>
+                
                 <div class='icon'>
+                    <!-- Can't create icon images because no access to stylesheet -->
                     <i class='fab fa-3x fa-fire'></i>
                 </div>
+                
                 <div class='description'>
-                    <h2>Premium Materials</h2>
+                    <h2>
+                        Premium Materials
+                    </h2>
+                    
                     <p>
                         Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
                         of your purchase.
@@ -45,13 +56,16 @@
             </div>
 
             <div class='grid'>
+                
                 <div class='icon'>
                     <i class='fab fa-3x fa-truck'></i>
                 </div>
+                
                 <div class='description'>
                     <h2>
                         Fast Shipping
                     </h2>
+                
                     <p>
                         We make sure you receive your trombone as soon as we have finished making it. We also provide
                         free returns if you're not satisfied.
@@ -60,12 +74,16 @@
             </div>
 
             <div class='grid'>
+                
                 <div class='icon'>
                     <i class='fab fa-3x fa-battery-full'></i>
                 </div>
+                
                 <div class='description'>
-                    <h2>Quality Assurance
+                    <h2>
+                        Quality Assurance
                     </h2>
+                    
                     <p>
                         For every purchase you make, we will ensure there are no damages or faults and we will check and
                         test the pitch of your instrument.
@@ -83,73 +101,103 @@
         </div>
 
         <div id='Pricing'>
+            
             <div id='pricing-container'>
+                
                 <h3 id='pricing-heading'>
                     TENOR TROMBONE
                 </h3>
+                
                 <h2>
                     $600
                 </h2>
+                
                 <p>
                     Lorem ipsum
                 </p>
+                
                 <p>
                     Lorem ipsum.
                 </p>
+                
                 <p>
                     Lorem ipsum dolor.
                 </p>
+                
                 <p>
                     Lorem ipsum.
                 </p>
+                
                 <button type='submit' value='submit' class='selectButton'>Select</button>
             </div>
 
             <div id='pricing-container'>
+                
                 <h3 id='pricing-heading'>
                     BASS TROMBONE
                 </h3>
+                
                 <h2>
                     $900
                 </h2>
+                
                 <p>
                     Lorem ipsum
                 </p>
+                
                 <p>
                     Lorem ipsum.
                 </p>
+                
                 <p>
                     Lorem ipsum dolor.
                 </p>
+                
                 <p>
                     Lorem ipsum.
                 </p>
+                
                 <button type='submit' value='submit' class='selectButton'>Select</button>
             </div>
 
             <div id='pricing-container'>
+                
                 <h3 id='pricing-heading'>
                     VALVE TROMBONE
-                    <h3>
-                        <h2>
-                            $1200
-                        </h2>
-                        <p>
-                            Plays similar to a Trumpet
-                        </p>
-                        <p>
-                            Great for Jazz Bands
-                        </p>
-                        <p>
-                            Lorem ipsum dolor.
-                        </p>
-                        <p>
-                            Lorem ipsum.
-                        </p>
-                        <button type='submit' value='submit' class='selectButton'>Select</button>
+                </h3>
+                <h2>
+                    $1200
+                </h2>
+           
+                <p>
+                    Plays similar to a Trumpet
+                </p>
+           
+                <p>
+                    Great for Jazz Bands
+                </p>
+           
+                <p>
+                    Lorem ipsum dolor.
+                </p>
+           
+                <p>
+                    Lorem ipsum.
+                </p>
+                    
+                <button type='submit' value='submit' class='selectButton'>Select</button>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p id='footer'>
+            <strong>Disclaimer!</strong> The above content is a recreation of the example provided by 
+            <a href='https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page'>
+            freeCodeCamp.org</a>. This webpage is a recreation of the following 
+            <em><a href='https://product-landing-page.freecodecamp.rocks/'>page</a></em>
+        </p>
+    </footer>
 </body>
 
 </html>
