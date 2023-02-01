@@ -1,0 +1,29 @@
+*{
+
+}
+
+root:{
+    
+}
+
+ /* CSS for Nav Bar */
+nav > ul{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: space-between;
+  list-style-type: none;
+}
+
+/* CSS for body */
+h1{
+  text-align: center;
+}
+ /* CSS for Introduction */
+
+ /* CSS for About Me */
+ #aboutMeText{
+   padding: 15px;
+   text-align: justify;
+ }
