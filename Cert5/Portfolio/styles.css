@@ -6,14 +6,19 @@ root:{
 
 }
 
+
  /* CSS for Nav Bar */
  nav{
-   display: fixed;
-   /* background-color: blue; */
+   position: fixed;
+   background-color: #095BAD;
    width: 100vw;
    margin: auto;
-
+   padding-right: 15px;
+   border: 1px solid black;
+   left: 0; 
+   top: 0; 
  }
+
 nav > ul{
   /* background-color: yellow; */
   display: flex;
@@ -21,27 +26,54 @@ nav > ul{
   justify-content: flex-end;
 }
 
-#nav-link{
-  border: solid 1px black;
-  background-color: pink;
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px
+nav>ul>li>a:visited{
+  color:white;
 }
 
+
+#nav-link{
+  /* border: solid 1px black; */
+  /* background-color: pink; */
+  display: absolute;
+  list-style-type: none;
+  margin-right: 20px;
+  padding-right: 10px;
+}
+
+
+
 /* CSS for body */
+body{
+  height: 100vh;
+  padding-bottom: 100px;
+  /* background-color: red; */
+}
+.main-section-container{
+  /* background-color: pink; */
+  padding-top: 10%;
+}
+
 h1{
   text-align: center;
 }
- /* CSS for Introduction */
 
  /* CSS for About Me */
+ #About_Me{
+   /* background-color: grey; */
+   padding: auto;
+   margin: auto;
+   left: 0;
+ }
  #aboutMeText{
    padding: 15px;
    text-align: justify;
+   /* color:white; */
  }
 
  /* CSS For Projects */
+ #projects{
+   /* background-color: lightgrey; */
+ }
  .projects-container{
    display: grid;
    grid-template-columns: repeat(3 , 1fr);
@@ -51,12 +83,51 @@ h1{
 .project-tile{
   /* background-color: pink; */
   height: 450px;
-  width: 100%;
   border: solid 2px black;
   margin: auto;
   padding: auto;
   border-radius: 5px;
   box-shadow: -10px -15px 5px blue;
+  /* color: white; */
+  
 }
 
+#project-texts{
+  padding: 20px;
+  text-align: left;
+  height: 200px;
+  overflow: scroll;
+}
+
+
  /* CSS For Contact */
+ i{
+   padding: 10px;
+   margin: 10px;
+ }
+/* CSS for Footer */
+footer{
+  background-color: #095BAD;
+  color: white; 
+  padding: 10px;
+  margin: auto;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+}
+
+footer > a{
+  text-decoration: none;
+  color:white;
+}
+
+footer > a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+/* media tags to change webpage when sizing changes. */
+
+@media(max-width: 1000px){
+  
+}
